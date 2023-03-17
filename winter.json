@@ -1,0 +1,76 @@
+{
+    "graph": {
+        "bar": {
+            "xLabel": "Environment",
+            "yLabel": "Payoff"
+        }
+    },
+    "hiders" :{
+        "mapping": {
+            "hRandom": "Spring/Summer",
+            "hMaxDistance": "Winter"
+        }
+    },
+    "seekers": {
+        "mapping": {
+            "sRandomWalkLowGasResourceImmune": "000LOWSEC",
+            "sRandomWalkMediumGasResourceImmune": "001MEDSEC",
+            "sRandomWalkHighGasResourceImmune": "002HIGHSEC",
+            "sRandomWalkLowGas": "003LOWSEC-RESP",
+            "sRandomWalkMediumGas": "004MEDSEC-RESP",
+            "sRandomWalkHighGas": "005HIGHSEC-RESP"
+        },
+        "variablesByType": {
+            "properties": {
+                "LowGas": {
+                    "gasProportion": 0.22 
+                },
+                "MediumGas": {
+                    "gasProportion": 0.5
+                },
+                "HighGas": {
+                    "gasProportion": 1
+                }
+            },
+            "behaviour": {
+                "Gas": {
+                    "leverageProbability": 0.51
+                },
+                "VariableImmune": {
+                    "leverageProbability": 0.89
+                },
+                "MetaRandom": {
+                    "leverageProbability": 0.63
+                }
+            }
+        }
+    },
+    "baseline": {
+        "_comment": "Allows for payoff to be contextualised by real data",
+        "environment": "hRandom",
+        "_comment_environment": "The environment (hider) in which the baseline data is taken",
+        "graph": {
+            "bar": {
+                "yLabel": "Health utilisation (average visits/year)"
+            }
+        },
+        "sRandomWalkLowGas": {
+            "data": 3760,
+            "_comment_data": "Non-winter month health utilisation by low SEC with asthma",
+            "payoff": 0.85,
+            "_comment_payoff": "Payoff received when simulating the same environment (non-winter) for the same individuals (low SEC with asthma)"
+        },
+        "sRandomWalkMediumGas": {
+            "data": 6382,
+            "_comment_data": "Non-winter month health utilisation by middle SEC with asthma",
+            "payoff": 0.92,
+            "_comment_payoff": "Payoff received when simulating the same environment (non-winter) for the same individuals (middle SEC with asthma)"
+        },
+        "sRandomWalkHighGas": {
+            "data": 1245,
+            "_comment_data": "Non-winter month health utilisation by high SEC with asthma",
+            "payoff": 0.99,
+            "_comment_payoff": "Payoff received when simulating the same environment (non-winter) for the same individuals (high SEC with asthma)"
+        }
+    }
+}
