@@ -1,0 +1,45 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# SEC ONLY (ONS + MCS) (P1), 'normal' environment
+#
+100, [Random,1], [RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}
+#
+# SEC + RESP (LDN) (P2), 'normal' environment
+#
+100, [Random,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# SEC ONLY (ONS + MCS) (P1), 'lower resourced' environment
+#
+100, [MaxDistance,1], [RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}
+#
+# SEC + RESP (LDN) (P2), 'lower resourced' environment
+#
+100, [MaxDistance,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# SEC + RESP (LDN) (P2); education intervention (I1), 'lower resourced' environment
+#
+100, [MaxDistance,1], [MaxDistanceLowGas,5][MaxDistanceMediumGas,5][MaxDistanceHighGas,5][RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}
+#
+# SEC + RESP (LDN) (P2); education intervention (I1); variable uptake (B1), 'lower resourced' environment
+#
+100, [MaxDistance,1], [RandomWalkLowGasVariableImmune,5][RandomWalkMediumGasVariableImmune,5][RandomWalkHighGasVariableImmune,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# SEC + RESP (LDN) (P2); immunity intervention (I3), 'lower resourced' environment
+#
+100, [MaxDistance,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}
+#
+# SEC + RESP (LDN) (P2); immunity intervention (I3); variable uptake (B3), 'lower resourced' environment
+#
+100, [MaxDistance,1], [RandomWalkLowGasVariableImmune,5][RandomWalkMediumGasVariableImmune,5][RandomWalkHighGasVariableImmune,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
