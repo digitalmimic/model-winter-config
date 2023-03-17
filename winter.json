@@ -13,12 +13,30 @@
     },
     "seekers": {
         "mapping": {
+            "_comment1": "SEC ONLY",
             "sRandomWalkLowGasResourceImmune": "000LOWSEC",
             "sRandomWalkMediumGasResourceImmune": "001MEDSEC",
             "sRandomWalkHighGasResourceImmune": "002HIGHSEC",
+            "_comment2": "SEC + RESP",
+            "sMaxDistanceLowGas": "003LOWSEC-RESP",
+            "sMaxDistanceMediumGas": "004MEDSEC-RESP",
+            "sMaxDistanceHighGas": "005HIGHSEC-RESP",
+            "_comment3": "SEC + RESP; variable uptake education (B1)",
+            "sMetaRandomLowGas": "006LOWSEC-RESP-UPTAKEI1",
+            "sMetaRandomMediumGas": "007MEDSEC-RESP-UPTAKEI1",
+            "sMetaRandomHighGas": "008HIGHSEC-RESP-UPTAKEI1",
+            "_comment4": "SEC + RESP",
             "sRandomWalkLowGas": "003LOWSEC-RESP",
             "sRandomWalkMediumGas": "004MEDSEC-RESP",
-            "sRandomWalkHighGas": "005HIGHSEC-RESP"
+            "sRandomWalkHighGas": "005HIGHSEC-RESP",
+            "_comment5": "SEC + RESP; variable uptake fuel payments (B2)",
+            "sRandomWalkLowGasVariableGas": "009HIGHSEC-RESP-UPTAKEI2",
+            "sRandomWalkMediumGasVariableGas": "010HIGHSEC-RESP-UPTAKEI2",
+            "sRandomWalkHighGasVariableGas": "011HIGHSEC-RESP-UPTAKEI2",
+            "_comment6": "SEC + RESP; variable uptake vaccination (B3)",
+            "sRandomWalkLowGasVariableImmune": "012HIGHSEC-RESP-UPTAKEI3",
+            "sRandomWalkMediumGasVariableImmune": "013HIGHSEC-RESP-UPTAKEI3",
+            "sRandomWalkHighGasVariableImmune": "014HIGHSEC-RESP-UPTAKEI3"
         },
         "variablesByType": {
             "properties": {
