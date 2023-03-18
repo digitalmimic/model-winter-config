@@ -13,22 +13,22 @@
     },
     "seekers": {
         "mapping": {
-            "_comment1": "SEC ONLY",
+            "_comment1": "SEC ONLY (P1.1)",
             "sRandomWalkLowGasResourceImmune": "000LOWSEC",
             "sRandomWalkMediumGasResourceImmune": "001MEDSEC",
             "sRandomWalkHighGasResourceImmune": "002HIGHSEC",
             "_comment2": "SEC + RESP",
-            "sMaxDistanceLowGas": "003LOWSEC-RESP",
-            "sMaxDistanceMediumGas": "004MEDSEC-RESP",
-            "sMaxDistanceHighGas": "005HIGHSEC-RESP",
-            "_comment3": "SEC + RESP; variable uptake education (B1)",
-            "sMetaRandomLowGas": "006LOWSEC-RESP-UPTAKEI1",
-            "sMetaRandomMediumGas": "007MEDSEC-RESP-UPTAKEI1",
-            "sMetaRandomHighGas": "008HIGHSEC-RESP-UPTAKEI1",
-            "_comment4": "SEC + RESP",
             "sRandomWalkLowGas": "003LOWSEC-RESP",
             "sRandomWalkMediumGas": "004MEDSEC-RESP",
             "sRandomWalkHighGas": "005HIGHSEC-RESP",
+            "_comment3": "SEC + RESP/DEP; education intervention (I1)",
+            "sMaxDistanceLowGas": "003LOWSEC-RESP",
+            "sMaxDistanceMediumGas": "004MEDSEC-RESP",
+            "sMaxDistanceHighGas": "005HIGHSEC-RESP",
+            "_comment4": "SEC + RESP/DEP; variable uptake education (B1)",
+            "sMetaRandomLowGas": "006LOWSEC-RESP-UPTAKEI1",
+            "sMetaRandomMediumGas": "007MEDSEC-RESP-UPTAKEI1",
+            "sMetaRandomHighGas": "008HIGHSEC-RESP-UPTAKEI1",
             "_comment5": "SEC + RESP; variable uptake fuel payments (B2)",
             "sRandomWalkLowGasVariableGas": "009HIGHSEC-RESP-UPTAKEI2",
             "sRandomWalkMediumGasVariableGas": "010HIGHSEC-RESP-UPTAKEI2",
@@ -36,9 +36,51 @@
             "_comment6": "SEC + RESP; variable uptake vaccination (B3)",
             "sRandomWalkLowGasVariableImmune": "012HIGHSEC-RESP-UPTAKEI3",
             "sRandomWalkMediumGasVariableImmune": "013HIGHSEC-RESP-UPTAKEI3",
-            "sRandomWalkHighGasVariableImmune": "014HIGHSEC-RESP-UPTAKEI3"
+            "sRandomWalkHighGasVariableImmune": "014HIGHSEC-RESP-UPTAKEI3",
+            "_comment7": "ETH ONLY (P1.2)",
+            "sRandomWalkLowerGasResourceImmune": "015EMETH",
+            "sRandomWalkUpperGasResourceImmune": "016BEETH",
+            "_comment8": "ETH + RESP",
+            "sRandomWalkLowerGas": "017EMETH-RESP",
+            "sRandomWalkUpperGas": "018WBETH-RESP",
+            "_comment9": "ETH + RESP/DEP; education intervention (I1)",
+            "sMaxDistanceLowerGas": "019EMETH-RESP-DEP",
+            "sMaxDistanceHigherGas": "020WBETH-RESP=DEP",
+            "_comment10": "ETH + RESP/DEP; variable uptake education (B1)",
+            "sMetaRandomLowerGas": "021EMETH-RESP-DEP-UPTAKEI1",
+            "sMetaRandomHigherGas": "022WBETH-RESP-DEP-UPTAKEI1",
+            "_comment11": "ETH + RESP; variable uptake fuel payments (B2)",
+            "sRandomWalkLowerrGasVariableGas": "023EMETH-RESP-UPTAKEI2",
+            "sRandomWalkUpperGasVariableGas": "024WBETH-RESP-UPTAKEI2",
+            "_comment12": "ETH + RESP; variable uptake vaccinations (B3)",
+            "sRandomWalkLowerGasVariableImmune": "025EMETH-RESP-UPTAKEI3",
+            "sRandomWalkUpperGasVariableImmune": "026WBETH-RESP-UPTAKEI3",
+            "_comment13": "SEC + DEP",
+            "sRandomWalkStationaryChanceLowGas": "027LOWSEC-DEP",
+            "sRandomWalkStationaryChanceMediumGas": "028MEDSEC-DEP",
+            "sRandomWalkStationaryChanceHighGas": "029HIGHSEC-DEP",
+            "_comment14": "SEC + DEP; variable uptake education (B1)",
+            "sMetaRandomStationaryChanceLowGas": "030LOWSEC-DEP-UPTAKEI1",
+            "sMetaRandomStationaryChanceMediumGas": "031MEDSEC-DEP-UPTAKEI1",
+            "sMetaRandomStationaryChanceHighGas": "032HIGHSEC-DEP-UPTAKEI1",
+            "_comment15": "SEC + DEP; variable uptake fuel payments (B2)",
+            "sRandomWalkStationaryChanceLowGasVariableGas": "033LOWSEC-DEP",
+            "sRandomWalkStationaryChanceMediumGasVariableGas": "034MEDSEC-DEP",
+            "sRandomWalkStationaryChanceHighGasVariableGas": "035HIGHSEC-DEP",
+            "_comment16": "ETH + DEP",
+            "sRandomWalkStationaryChanceLowerGas": "036EMETH-DEP",
+            "sRandomWalkStationaryChanceUpperGas": "037WBETH-DEP",
+            "_comment17": "ETH + DEP; variable uptake education (B1)",
+            "sMetaRandomStationaryChanceLowerGas": "038EMETH-DEP-UPTAKEI1",
+            "sMetaRandomStationaryChanceUpperGas": "039WBSEC-DEP-UPTAKEI1",
+            "_comment18": "ETH + DEP; variable uptake fuel payments (B2)",
+            "sRandomWalkStationaryChanceLowerGasVariableGas": "040EMBETH-DEP-UPTAKEI3",
+            "sRandomWalkStationaryChanceUpperGasVariableGas": "041WBETH-DEP-UPTAKEI3"
+
         },
         "variablesByType": {
+            "_comment1": "Configure seeker properties",
+            "_comment2": "(Gov). NB. Link between conditions and income captured (indirectly) elsewhere so all initial gas the same for all conditions",
             "properties": {
                 "LowGas": {
                     "gasProportion": 0.22 
@@ -48,9 +90,16 @@
                 },
                 "HighGas": {
                     "gasProportion": 1
+                },
+                "LowerGas": {
+                    "gasProportion": 0.89
+                },
+                "UpperGas": {
+                    "gasProportion": 1
                 }
             },
             "behaviour": {
+                "_comment": "(PPIE)",
                 "Gas": {
                     "leverageProbability": 0.51
                 },

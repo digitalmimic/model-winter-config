@@ -1,56 +1,194 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 #
-# [001] SEC ONLY (ONS + MCS) (P1), 'normal' environment
+# [001] SEC ONLY (ONS + MCS) (P1-1), 'normal' environment
 #
-100, [Random,1], [RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,001}
+1, [Random,1], [RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,001}
 #
-# [002] SEC + RESP (LDN) (P2), 'normal' environment
+# [002] SEC + RESP (LDN) (P2-1), 'normal' environment
 #
-100, [Random,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,002}
-#
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-#
-# [003] SEC ONLY (ONS + MCS) (P1), 'lower resourced' environment
-#
-100, [MaxDistance,1], [RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,003}
-#
-# [004] SEC + RESP (LDN) (P2), 'lower resourced' environment
-#
-100, [MaxDistance,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,004}
+1, [Random,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,002}
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 #
-# [005] SEC + RESP (LDN) (P2); education intervention (I1), 'lower resourced' environment
+# [003] SEC ONLY (ONS + MCS) (P1-1), 'lower resourced' environment
 #
-100, [MaxDistance,1], [MaxDistanceLowGas,5][MaxDistanceMediumGas,5][MaxDistanceHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,005}
+1, [MaxDistance,1], [RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,003}
 #
-# [006] SEC + RESP (LDN) (P2); education intervention (I1); variable uptake (B1), 'lower resourced' environment
+# [004] SEC + RESP (LDN) (P2-1), 'lower resourced' environment
 #
-100, [MaxDistance,1], [MetaRandomHighGas,5][MetaRandomMediumGas,5][MetaRandomLowGas,5][MaxDistanceLowGas,5][MaxDistanceMediumGas,5][MaxDistanceHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,006}
-#
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-#
-# [007] SEC + RESP (LDN) (P2); fuel intervention (I2), 'lower resourced' environment
-#
-100, [MaxDistance,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,007}
-#
-# [008] SEC + RESP (LDN) (P2); fuel intervention (I2); variable uptake (B2), 'lower resourced' environment
-#
-100, [MaxDistance,1], [RandomWalkLowGasVariableGas,5][RandomWalkMediumGasVariableGas,5][RandomWalkHighGasVariablesGas,5][RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,008}
+1, [MaxDistance,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,004}
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 #
-# [009] SEC + RESP (LDN) (P2); immunity intervention (I3), 'lower resourced' environment
+# [005] SEC + RESP/DEP (LDN) (P2-1 and P2-2); education intervention (I1), 'lower resourced' environment
 #
-100, [MaxDistance,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,009}
+1, [MaxDistance,1], [MaxDistanceLowGas,5][MaxDistanceMediumGas,5][MaxDistanceHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,005}
 #
-# [010] SEC + RESP (LDN) (P2); immunity intervention (I3); variable uptake (B3), 'lower resourced' environment
+# [006] SEC + RESP (LDN) (P2-1); education intervention (I1); variable uptake (B1), 'lower resourced' environment
 #
-100, [MaxDistance,1], [RandomWalkLowGasVariableImmune,5][RandomWalkMediumGasVariableImmune,5][RandomWalkHighGasVariableImmune,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,010}
+1, [MaxDistance,1], [MetaRandomLowGas,5][MetaRandomMediumGas,5][MetaRandomHighGas,5][MaxDistanceLowGas,5][MaxDistanceMediumGas,5][MaxDistanceHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,006}
 #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [007] SEC + RESP (LDN) (P2-1); fuel intervention (I2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,007}
+#
+# [008] SEC + RESP (LDN) (P2-1); fuel intervention (I2); variable uptake (B2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowGasVariableGas,5][RandomWalkMediumGasVariableGas,5][RandomWalkHighGasVariablesGas,5][RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,008}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [009] SEC + RESP (LDN) (P2-1); immunity intervention (I3), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowGas,5][RandomWalkMediumGas,5][RandomWalkHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,009}
+#
+# [010] SEC + RESP (LDN) (P2-1); immunity intervention (I3); variable uptake (B3), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowGasVariableImmune,5][RandomWalkMediumGasVariableImmune,5][RandomWalkHighGasVariableImmune,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,010}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [011] ETH ONLY (LDN + REACH) (P1-2), 'normal' environment
+#
+1, [Random,1], [RandomWalkLowerGasResourceImmune,5][RandomWalkUpperGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,011}
+#
+# [012] ETH + RESP (LDN) (P2-2), 'normal' environment
+#
+1, [Random,1], [RandomWalkLowerGas,5][RandomWalkUpperGas,5][RandomWalkLowerGasResourceImmune,5][RandomWalkUpperGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,012}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [013] ETH ONLY (LDN + REACH) (P1-2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,013}
+#
+# [014] ETH + RESP (LDN) (P2-1), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowerGas,5][RandomWalkUpperGas,5][RandomWalkLowerGasResourceImmune,5][RandomWalkUpperGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,014}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [015] ETH SEC + RESP/DEP (LDN) (P2-1 and P2-2); education intervention (I1), 'lower resourced' environment
+#
+1, [MaxDistance,1], [MaxDistanceLowerGas,5][MaxDistanceUpperGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,015}
+#
+# [016] ETH + RESP (LDN) (P2-1); education intervention (I1); variable uptake (B1), 'lower resourced' environment
+#
+1, [MaxDistance,1], [MetaRandomLowerGas,5][MetaRandomUpperGas,5][MaxDistanceLowerGas,5][MaxDistanceUpperGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,016}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [017] ETH + RESP (LDN) (P2-1); fuel intervention (I2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowerGas,5][RandomWalkUpperGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,017}
+#
+# [018] ETH + RESP (LDN) (P2-1); fuel intervention (I2); variable uptake (B2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowerGasVariableGas,5][RandomWalkUpperGasVariableGas,5][RandomWalkLowerGas,5][RandomWalkUpperGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,018}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [019] ETH + RESP (LDN) (P2-1); immunity intervention (I3), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowerGas,5][RandomWalkUpperGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,019}
+#
+# [020] ETH + RESP (LDN) (P2-1); immunity intervention (I3); variable uptake (B3), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkLowerGasVariableImmune,5][RandomWalkUpperGasVariableImmune,5][RandomWalkLowerGasResourceImmune,5][RandomWalkUpperGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,020}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [021] SEC + DEP (REACH) (P2-2), 'normal' environment
+#
+1, [Random,1], [RandomWalkStationaryChanceLowGas,5][RandomWalkStationaryChanceMediumGas,5][RandomWalkStationaryChanceHighGas,5][RandomWalkLowGasResourceImmune,5][RandomWalkMediumGasResourceImmune,5][RandomWalkHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,021}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [022] SEC + DEP (REACH) (P2-2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkStationaryChanceLowGas,5][RandomWalkStationaryChanceMediumGas,5][RandomWalkStationaryChanceHighGas,5][RandomWalkStationaryChanceLowGasResourceImmune,5][RandomWalkStationaryChanceMediumGasResourceImmune,5][RandomWalkStationaryChanceHighGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,022}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [023] SEC + DEP (LDN) (P2-2); education intervention (I1); variable uptake (B1), 'lower resourced' environment
+#
+1, [MaxDistance,1], [MetaRandomStationaryChanceLowGas,5][MetaRandomStationaryChanceMediumGas,5][MetaRandomStationaryChanceHighGas,5][MaxDistanceLowGas,5][MaxDistanceMediumGas,5][MaxDistanceHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,023}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [024] SEC + DEP (LDN) (P2-2); fuel intervention (I2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkStationaryChanceLowGas,5][RandomWalkStationaryChanceMediumGas,5][RandomWalkStationaryChanceHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,024}
+#
+# [025] SEC + DEP (LDN) (P2-2); fuel intervention (I2); variable uptake (B2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkStationaryChanceLowGasVariableGas,5][RandomWalkStationaryChanceMediumGasVariableGas,5][RandomWalkStationaryChanceHighGasVariablesGas,5][RandomWalkStationaryChanceLowGas,5][RandomWalkStationaryChanceMediumGas,5][RandomWalkStationaryChanceHighGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,025}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# NB: No vaccine intervention for DEP
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [026] ETH + DEP (REACH) (P2-2), 'normal' environment
+#
+1, [Random,1], [RandomWalkStationaryChanceLowerGas,5][RandomWalkStationaryChanceUpperGas,5][RandomWalkLowerGasResourceImmune,5][RandomWalkUpperGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,026}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [027] ETH + DEP (REACH) (P2-2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkStationaryChanceLowerGas,5][RandomWalkStationaryChanceUpperGas,5][RandomWalkStationaryChanceLowerGasResourceImmune,5][RandomWalkStationaryChanceUpperGasResourceImmune,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,027}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [028] ETH + DEP (LDN) (P2-2); education intervention (I1); variable uptake (B1), 'lower resourced' environment
+#
+1, [MaxDistance,1], [MetaRandomStationaryChanceLowerGas,5][MetaRandomStationaryChanceUpperGas,5][MaxDistanceLowerGas,5][MaxDistanceUpperGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {AdditionalResourceImmunity,0.3}, {ConfigId,028}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [029] ETH + DEP (LDN) (P2-2); fuel intervention (I2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkStationaryChanceLowerGas,5][RandomWalkStationaryChanceUpperGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,029}
+#
+# [030] ETH + DEP (LDN) (P2-2); fuel intervention (I2); variable uptake (B2), 'lower resourced' environment
+#
+1, [MaxDistance,1], [RandomWalkStationaryChanceLowerGasVariableGas,5][RandomWalkStationaryChanceUpperGasVariablesGas,5][RandomWalkStationaryChanceLowerGas,5][RandomWalkStationaryChanceUpperGas,5], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,030}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# NB: No vaccine intervention for DEP
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
