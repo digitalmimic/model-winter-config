@@ -2,7 +2,7 @@
     "graph": {
         "bar": {
             "xLabel": "Environment",
-            "yLabel": "Payoff"
+            "yLabel": "Payoff (Unmapped)"
         }
     },
     "game": {
