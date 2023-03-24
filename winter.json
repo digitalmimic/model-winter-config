@@ -9,12 +9,12 @@
         "graph": {
             "xLabel": {
                 "seekers": {
-                    "MaxDistance": "Intervention: Education",
-                    "AdaptiveSeekingAgent": "Intervention: Education",
+                    "MaxDistance": "Intervention: Advice",
+                    "AdaptiveSeekingAgent": "Intervention: Advice",
                     "_comment": "If any of these seekers are present, alter the X label accordingly"
                 },
                 "config": {
-                    "BaseGasProportion": "Intervention: Fuel payments",
+                    "BaseGasProportion": "Intervention: Support payments",
                     "AdditionalResourceImmunity": "Intervention: Vaccinations",
                     "_comment": "If any of these variables are present in the config, alter the X label accordingly"
                 }
@@ -23,7 +23,7 @@
     },
     "hiders" :{
         "mapping": {
-            "hRandom": "Spring/Summer",
+            "hRandom": "Non-winter",
             "hMaxDistance": "Winter"
         }
     },
@@ -45,7 +45,7 @@
             "sMetaRandomLowGas": "003LOWSEC-RESP",
             "sMetaRandomMediumGas": "004MEDSEC-RESP",
             "sMetaRandomHighGas": "005HIGHSEC-RESP",
-            "_comment5": "SEC + RESP; variable uptake fuel payments (B2)",
+            "_comment5": "SEC + RESP; variable uptake support payments (B2)",
             "sRandomWalkLowGasVariableGas": "003LOWSEC-RESP",
             "sRandomWalkMediumGasVariableGas": "004MEDSEC-RESP",
             "sRandomWalkHighGasVariableGas": "005HIGHSEC-RESP",
@@ -65,7 +65,7 @@
             "_comment10": "ETH + RESP; variable uptake education (B1)",
             "sMetaRandomLowerGas": "017EMETH-RESP",
             "sMetaRandomUpperGas": "018WBETH-RESP",
-            "_comment11": "ETH + RESP; variable uptake fuel payments (B2)",
+            "_comment11": "ETH + RESP; variable uptake support payments (B2)",
             "sRandomWalkLowerGasVariableGas": "017EMETH-RESP",
             "sRandomWalkUpperGasVariableGas": "018WBETH-RESP",
             "_comment12": "ETH + RESP; variable uptake vaccinations (B3)",
@@ -79,7 +79,7 @@
             "sMetaRandomStationaryChanceLowGas": "027LOWSEC-DEP",
             "sMetaRandomStationaryChanceMediumGas": "028MEDSEC-DEP",
             "sMetaRandomStationaryChanceHighGas": "029HIGHSEC-DEP",
-            "_comment15": "SEC + DEP; variable uptake fuel payments (B2)",
+            "_comment15": "SEC + DEP; variable uptake support payments (B2)",
             "sRandomWalkStationaryChanceLowGasVariableGas": "027LOWSEC-DEP",
             "sRandomWalkStationaryChanceMediumGasVariableGas": "028MEDSEC-DEP",
             "sRandomWalkStationaryChanceHighGasVariableGas": "029HIGHSEC-DEP",
@@ -89,7 +89,7 @@
             "_comment17": "ETH + DEP; variable uptake education (B1)",
             "sMetaRandomStationaryChanceLowerGas": "036EMETH-DEP",
             "sMetaRandomStationaryChanceUpperGas": "037WBSEC-DEP",
-            "_comment18": "ETH + DEP; variable uptake fuel payments (B2)",
+            "_comment18": "ETH + DEP; variable uptake support payments (B2)",
             "sRandomWalkStationaryChanceLowerGasVariableGas": "036EMBETH-DEP",
             "sRandomWalkStationaryChanceUpperGasVariableGas": "037WBETH-DEP"
         },

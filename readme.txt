@@ -2,7 +2,7 @@ HANDS plugin for winter pressures usecase
 
 Interventions -- properties and strategies in the game:
 (I1) Interventions targeting the resource search mechanism (e.g. education) [pre] -- seeker strategies -- seeker with targeted search
-(I2) Interventions targeting the research search cost (e.g. fuel payments) [during] -- seeker gas -- increase seeker gas
+(I2) Interventions targeting the research search cost (e.g. support payments) [during] -- seeker gas -- increase seeker gas
 (I3) Interventions targeting the payoff (outcomes), e.g. vaccine push [post] -- seeker immunity -- increase immunity against lack of resources
 
 Population:
@@ -12,7 +12,7 @@ Permutations of the above.
 
 Behaviours:
 (B1) Uptake of targeted education -- % distribution between random and targeted (meta-strategy distribution)
-(B2) Uptake of fuel payments -- % chance to use (additional) gas
+(B2) Uptake of support payments -- % chance to use (additional) gas
 (B3) Uptake of vaccines -- % chance to leverage (additional) resource immunity
 
 Outcomes:
