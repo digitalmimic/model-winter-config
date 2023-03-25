@@ -3,6 +3,10 @@
         "bar": {
             "xLabel": "Environment",
             "yLabel": "Payoff (Unmapped)"
+        },
+        "line": {
+            "xLabel": "Time",
+            "yLabel": "Payoff (Unmapped)"
         }
     },
     "game": {
@@ -136,6 +140,9 @@
         "graph": {
             "bar": {
                 "yLabel": "Health utilisation (average visits/year)"
+            },
+            "line": {
+                "yLabel": "Health utilisation"
             }
         },
         "sRandomWalkLowGas": {
