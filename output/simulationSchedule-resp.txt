@@ -119,7 +119,7 @@
 #
 # [034] SEC + RESP (LDN) (P2-1); payment intervention (I2); variable uptake (B2), 'lower resourced' environment
 #
-1000, [MaxDistance,1], [RandomWalkLowGasVariableGas,5][RandomWalkMediumGasVariableGas,9][RandomWalkHighGasVariableGas,2], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,034}
+# 1000, [MaxDistance,1], [RandomWalkLowGasVariableGas,5][RandomWalkMediumGasVariableGas,9][RandomWalkHighGasVariableGas,2], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {BaseGasProportion,0.3}, {ConfigId,034}
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -128,4 +128,4 @@
 #
 # [035] SEC + RESP (LDN) (P2-1); education intervention (I1); variable uptake (B1), 'lower resourced' environment - over rounds
 #
-1000, [MaxDistance,1], [MetaRandomLowGas,5][MetaRandomMediumGas,9][MetaRandomHighGas,2], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,10}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,true}, {ConfigId,035}
+100, [MaxDistance,1], [MetaRandomLowGas,5][MetaRandomMediumGas,9][MetaRandomHighGas,2], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,100}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,035}
