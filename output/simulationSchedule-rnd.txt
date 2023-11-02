@@ -1,0 +1,9 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+#
+# [034] SEC + RESP (LDN) (P2-1), 'lower resourced' environment
+#
+1000, [MaxDistance,1], [RandomWalkLowGas,-1][RandomWalkMediumGas,-1][RandomWalkHighGas,-1], {Topology,random}, {NumberOfNodes,50}, {NumberOfHideLocations,5}, {Rounds,1}, {EdgeWeight,10.0}, {FixedOrUpperWeight,random}, {EdgeTraversalDecrement,0}, {MixHiders,false}, {MixSeekers,false}, {ResetPerRound,false}, {ConfigId,034}
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
